@@ -49,6 +49,7 @@ authRouter.post("/login", async (req, res) => {
 
 authRouter.post("/registration", async (req, res) => {
   try {
+    console.log('reg');
     const password = req.body.password;
     const salt = await bcrypt.genSalt(10);
     const hash = await bcrypt.hash(password, salt);

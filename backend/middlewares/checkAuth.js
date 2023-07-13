@@ -1,8 +1,7 @@
 const jwt = require("jsonwebtoken");
 
 module.exports = async function checkAuth(req, res, next) {
-  const token = (req.headers.autorization || "").replace(/Bearer\s?/, "");
-  console.log(token, "Токен юзера");
+  const token = (req.headers.authorization || "").replace(/Bearer\s?/, "");
   if (token) {
     try {
       const decoded = jwt.verify(token, "secret-word");
@@ -14,8 +13,6 @@ module.exports = async function checkAuth(req, res, next) {
       });
     }
   } else {
-    return res.status(403).json({
-      message: "Нет доступа",
-    });
+    next();
   }
 };
