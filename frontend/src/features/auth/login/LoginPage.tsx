@@ -32,46 +32,55 @@ function LoginPage() {
 
   return (
     <div className={style.loginPage}>
-      <form
-        className={style.loginForm}
-        onSubmit={handleSubmit}
-      >
-        <div className={style.containerInput}>
-          <input
-            type='text'
-            placeholder='E-mail'
-            id='e-mail-input'
-            name='e-mail'
-            className={style.input}
-            value={email}
-            onChange={handleEmailChange}
-          />
-          <input
-            type='text'
-            placeholder='Пароль'
-            id='password-input'
-            name='password'
-            className={style.input}
-            value={password}
-            onChange={handlePasswordChange}
-          />
-          <div className={style.removePass}>Забыли пароль?</div>
+      <div className={style.loginPage_head}>
+        <div>*</div>
+      </div>
+      <div className={style.loginPage_container}>
+        <div className={style.loginPage_container_logo}>logo</div>
+        <div className={style.loginPage_container_tumbler}></div>
+        <div className={style.loginPage_container_form}>
+          <form onSubmit={handleSubmit}>
+            <div className={style.loginPage_container_form_inputs}>
+              <input
+                type='text'
+                placeholder='E-mail'
+                id='e-mail-input'
+                name='e-mail'
+                value={email}
+                onChange={handleEmailChange}
+              />
+              <input
+                type='text'
+                placeholder='Пароль'
+                id='password-input'
+                name='password'
+                value={password}
+                onChange={handlePasswordChange}
+              />
+              <div className={style.loginPage_container_form_removePass}>Забыли пароль?</div>
+            </div>
+            <div className={style.loginPage_container_form_buttons}>
+              <button
+                type='submit'
+                className={style.loginPage_container_form_buttons_log}
+              >
+                Войти
+              </button>
+              <button
+                onClick={handleLinkRegistration}
+                className={style.loginPage_container_form_buttons_reg}
+              >
+                Создать аккаунт
+              </button>
+            </div>
+          </form>
         </div>
-        <div className={style.containerButton}>
-          <button
-            type='submit'
-            className={style.buttonLogin}
-          >
-            Войти
-          </button>
-          <button
-            onClick={handleLinkRegistration}
-            className={style.linkRegistration}
-          >
-            Создать аккаунт
-          </button>
+        <div className={style.loginPage_container_lowerBlock}>
+          <div> войти с помощью</div>
+          <div>гугл картинки</div>
+          <div>подробнее</div>
         </div>
-      </form>
+      </div>
     </div>
   );
 }

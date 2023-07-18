@@ -28,10 +28,7 @@ authRouter.post("/login", async (req, res) => {
       return res.status(404).json({ message: "Пользователь не найден" });
     }
 
-    const validatePassword = await bcrypt.compare(
-      req.body.password,
-      user._doc.passwordHash
-    );
+    const validatePassword = await bcrypt.compare(req.body.password, user._doc.passwordHash);
     if (!validatePassword) {
       return res.status(400).json({ message: "Неверный логин или пароль" });
     }
@@ -49,7 +46,6 @@ authRouter.post("/login", async (req, res) => {
 
 authRouter.post("/registration", async (req, res) => {
   try {
-    console.log('reg');
     const password = req.body.password;
     const salt = await bcrypt.genSalt(10);
     const hash = await bcrypt.hash(password, salt);

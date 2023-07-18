@@ -3,6 +3,8 @@ const expressConfig = require("./config/express");
 const authRouter = require("./routes/auth.routes");
 const myRouter = require("./routes/my.routes");
 const connectionMongoDB = require("./db/config/mongodb");
+const checkAuth = require("./middlewares/checkAuth");
+
 
 
 connectionMongoDB();
@@ -11,6 +13,8 @@ const app = express();
 expressConfig(app);
 
 app.use("/auth", authRouter);
+app.use(checkAuth);
+
 app.use("/my", myRouter);
 
 app.use((error, req, res, _next) => {

@@ -9,7 +9,7 @@ import RegistrationPage from "../features/auth/registration/RegistrationPage";
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div>
         <Routes>
           <Route
