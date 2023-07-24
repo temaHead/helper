@@ -12,8 +12,8 @@ connectionMongoDB();
 const app = express();
 expressConfig(app);
 
-app.use("/auth", authRouter);
 app.use(checkAuth);
+app.use("/auth", authRouter);
 
 app.use("/my", myRouter);
 

@@ -1,0 +1,53 @@
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form_inputs {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    justify-content: center;
+  }
+  .form_buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .form_inputs input {
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-size: 22px;
+    padding: 7px;
+    margin: 7px 0px;
+    font-weight: bold;
+  }
+  
+  .form_inputs input:focus {
+    border: 2px solid yellow;
+    outline-offset: 0px;
+    outline: none;
+  }
+  .form_removePass{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .form_buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  
+  }
+  .form_buttons button{
+    height: 45px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 7px 0px;
+  }
+  .form_buttons_log{
+    background-color: rgb(222, 197, 14);
+    color: black;
+  }
+  .phone{
+    
+  }

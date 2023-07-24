@@ -13,75 +13,25 @@
   align-items: center;
   padding: 15px;
 }
+
 .loginPage_container {
   display: flex;
   flex-direction: column;
   width: 85%;
 }
+
 .loginPage_container_logo {
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.loginPage_container_tumbler{
-  border: 1px solid gray;
-  height: 45px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
+
 .loginPage_container_form {
   display: flex;
   flex-direction: column;
 }
-.loginPage_container_form form {
-  display: flex;
-  flex-direction: column;
-}
-.loginPage_container_form_inputs {
-  display: flex;
-  flex-direction: column;
-}
-.loginPage_container_form_buttons {
-  display: flex;
-  flex-direction: column;
-}
-.loginPage_container_form_inputs input {
-  height: 45px;
-  border: 1px solid grey;
-  border-radius: 8px;
-  font-size: 20px;
-  padding: 7px;
-  margin: 7px 0px;
-  font-weight: bold;
-}
 
-.loginPage_container_form_inputs input:focus {
-  border: 2px solid yellow;
-  outline-offset: 0px;
-  outline: none;
-}
-.loginPage_container_form_removePass{
-  display: flex;
-  justify-content: flex-end;
-}
-.loginPage_container_form_buttons{
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-
-}
-.loginPage_container_form_buttons button{
-  height: 45px;
-  border: 1px solid gray;
-  border-radius: 8px;
-  font-size: 18px;
-  margin: 7px 0px;
-}
-.loginPage_container_form_buttons_log{
-  background-color: rgb(222, 197, 14);
-  color: black;
-}
 .loginPage_container_lowerBlock{
   display: flex;
   flex-direction: column;

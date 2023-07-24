@@ -8,13 +8,13 @@ function SatrtPage() {
       <div>стартовая страница для тех кто не залогинен</div>
       <Link
         className={style.a}
-        to='/auth/login'
+        to='/login'
       >
         <div className={style.login}>Войти</div>
       </Link>
       <Link
         className={style.a}
-        to='/auth/registration'
+        to='/registration'
       >
         <div className={style.reg}>Зарегистрироваться</div>
       </Link>

@@ -12,3 +12,14 @@ export type LoginRegData = {
   password: string;
 };
 
+export type CategoriesListState = {
+  categoriesList: CategoryType[];
+};
+
+export type CategoryType = {
+  _id: number;
+  categoryName: string;
+  open: boolean;
+  userId: string;
+  secret: string;
+};

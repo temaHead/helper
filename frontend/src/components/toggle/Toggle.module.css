@@ -1,0 +1,26 @@
+.toggleWrapper {
+  border: 1px solid gray;
+  height: 45px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 4px;
+}
+.toggleInput {
+  border-radius: 8px;
+  flex-basis: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+.toggleButton {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+}
+.buttonActive {
+  background-color: gray;
+}
+.toggleButtonText {
+  background-color: rgba(255, 255, 255, 0);
+}
