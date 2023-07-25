@@ -17,9 +17,17 @@ export type CategoriesListState = {
 };
 
 export type CategoryType = {
-  _id: number;
+  _id: string;
   categoryName: string;
   open: boolean;
   userId: string;
   secret: string;
+  description: string;
+};
+
+export type AddCaregory = {
+  categoryName: string;
+  open: boolean;
+  secret: string;
+  description: string;
 };

@@ -13,7 +13,6 @@ function Categories() {
     dispatch(getCategories());
   }, []);
   const categories = useSelector(selectCategories);
-  console.log(categories);
 
   return (
     <div className={style.categories}>

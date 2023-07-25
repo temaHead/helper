@@ -17,7 +17,7 @@ export const getCategories = createAsyncThunk("my/getCategoriesAsync", async () 
 /**
  * Добавляем категорию
  */
-export const addCaregory = createAsyncThunk("my/categoriesAsync", async (category: types.CategoryType) => {
+export const addCaregory = createAsyncThunk("my/categoriesAsync", async (category: types.AddCaregory) => {
   const { data } = await axios.post("/my/categories", category);
   return data;
 });

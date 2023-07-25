@@ -4,7 +4,7 @@ const Category = require("../db/models/Category");
 myRouter.get("/categories", async (req, res) => {
   console.log(req.userId);
   try {
-    const data = await Category.find({userId:req.userId});
+    const data = await Category.find({ userId: req.userId });
     res.json(data);
   } catch (err) {
     console.log(err);
@@ -17,13 +17,15 @@ myRouter.get("/categories", async (req, res) => {
 myRouter.post("/categories", async (req, res) => {
   try {
     const data = new Category({
+      userId: req.userId,
       categoryName: req.body.categoryName,
-      userId: req.body.userId,
       secret: req.body.secret,
       open: req.body.open,
+      description: req.body.description,
     });
 
     const category = await data.save();
+    console.log(category);
     res.json(category);
   } catch (err) {
     console.log(err);

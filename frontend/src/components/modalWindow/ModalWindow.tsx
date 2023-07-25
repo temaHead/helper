@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import AddCategoryContainer from "../addCategoryContainer/AddCategoryContainer";
+import AddItemContainer from "../addItemContainer/AddItemContainer";
+import style from './ModalWindow.module.css'
 
-function ModalWindow() {
+type ModalWindowProps = {
+  type: string;
+  handleModalWindow(): void;
+};
+function ModalWindow(props: ModalWindowProps) {
+  const { type, handleModalWindow } = props;
   return (
-    <div>ModalWindow</div>
-  )
+    <div className={style.modal_window}>
+      {type === "category" && <AddCategoryContainer handleModalWindow={handleModalWindow} />}
+      {type === "item" && <AddItemContainer />}
+    </div>
+  );
 }
 
-export default ModalWindow
+export default ModalWindow;
