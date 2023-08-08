@@ -1,0 +1,11 @@
+.item {
+  border: 1px solid yellow;
+  border-radius: 8px;
+  padding: 0px 15px;
+  width: 95%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+}

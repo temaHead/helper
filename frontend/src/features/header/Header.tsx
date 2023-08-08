@@ -5,10 +5,11 @@ import { selectUser } from "../../redux/selectors";
 import { useAppDispatch } from "../../redux/store";
 import { logout } from "../../redux/authSlice";
 import { useNavigate } from "react-router-dom";
+import Logo from "../../components/logo";
 
 function Header() {
   const user = useSelector(selectUser);
-  const navigate=useNavigate()
+  const navigate = useNavigate();
 
   const dispatch = useAppDispatch();
 
@@ -21,11 +22,24 @@ function Header() {
   return (
     <div className={style.header}>
       <div className={style.header_content}>
-        header
-        {user && <button onClick={handleLogout}>выход</button>}
+        <div>
+          <div className={style.logo}>
+            <Logo />
+          </div>
+        </div>
+        <div className={style.like_user}>
+          <div className={style.like}></div>
+          <a href='/user'>
+            <div className={style.user}></div>
+          </a>
+        </div>
       </div>
     </div>
   );
 }
 
 export default Header;
+
+{
+  /* {user && <button onClick={handleLogout}>выход</button>} */
+}

@@ -34,7 +34,10 @@ function AddCategoryContainer(props: AddCategoryContainerProps) {
           className={style.btn_back}
         >
           {" "}
-          стрелка назад
+          <img
+            src='/arrow.svg'
+            className={style.img_arrow}
+          />
         </button>
       </div>
       <form

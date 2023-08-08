@@ -1,0 +1,33 @@
+.items_container{
+    border: 3px solid red;
+    height: 100vh;
+    width: 100vw;
+}
+.items_back{
+    height: 10%;
+    width: 80px;
+}
+.items_content{
+    height: 90%;
+    width: 100%;
+    border: 2px solid yellow;
+}
+.category_name{
+    height: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+}
+.items{
+    height: 80%;
+    border: 3px solid green;
+}
+.items_buttonAdd{
+    height: 10%;
+    
+}
+.items_buttonAdd button{
+    font-size: 25px;
+    color: aquamarine;
+}

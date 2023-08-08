@@ -12,8 +12,9 @@ export type LoginRegData = {
   password: string;
 };
 
-export type CategoriesListState = {
+export type ListState = {
   categoriesList: CategoryType[];
+  itemsList: ItemType[];
 };
 
 export type CategoryType = {
@@ -30,4 +31,22 @@ export type AddCaregory = {
   open: boolean;
   secret: string;
   description: string;
+};
+
+export type ItemType = {
+  _id: string;
+  itemName: string;
+  descriptoin: string;
+  count: string;
+  price: string;
+  categoryId: string;
+  userId: string;
+};
+
+export type AddItem = {
+  itemName: string;
+  description: string;
+  count: string;
+  price: string;
+  categoryId: string;
 };

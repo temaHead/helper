@@ -26,10 +26,10 @@
   height: 50px;
   border: 1px solid grey;
   border-radius: 8px;
-  font-size: 22px;
+  fontsize: 22px;
   padding: 7px;
   margin: 7px 0px;
-  font-weight: bold;
+  fontweight: bold;
 }
 
 .form_add input:focus {
@@ -41,7 +41,7 @@
   height: 45px;
   border: 1px solid gray;
   border-radius: 8px;
-  font-size: 18px;
+  fontsize: 18px;
   margin: 7px 0px;
   width: 35%;
   display: flex;
@@ -60,8 +60,16 @@
   align-items: self-end;
 }
 .title {
-  font-size: 20px;
+  fontsize: 25px;
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
+}
+.img_arrow {
+  width: 100%;
+  background-color: antiquewhite;
+}
+.btn_back {
+  width: 40px;
+  height: 40px;
 }

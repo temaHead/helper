@@ -29,10 +29,10 @@ function LoginPage() {
           />
         </div>
         <div className={style.loginPage_container_form}>
-          <Form emailButtonActive={emailButtonActive}/>
+          <Form emailButtonActive={emailButtonActive} />
         </div>
         <div className={style.loginPage_container_lowerBlock}>
-          <div> войти с помощью</div>
+          <div>войти с помощью</div>
           <div>гугл картинки</div>
           <div>подробнее</div>
         </div>

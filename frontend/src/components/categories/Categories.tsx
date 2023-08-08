@@ -17,7 +17,7 @@ function Categories() {
   return (
     <div className={style.categories}>
       {categories.map((el) => (
-        <Category category={el} />
+        <Category key={el._id} category={el} />
       ))}
     </div>
   );

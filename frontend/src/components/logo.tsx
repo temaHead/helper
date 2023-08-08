@@ -29,7 +29,7 @@ function Logo() {
           >
             <rect
               fill='url(#gridpattern)'
-              stroke-width='0'
+              strokeWidth='0'
               y='0'
               x='0'
               height='100%'
@@ -46,22 +46,22 @@ function Logo() {
             id='svg_4'
             cy='30.090331'
             cx='30.027302'
-            stroke-width='1.5'
+            strokeWidth='1.5'
             fill='#edc62a'
           />
           <text
-            font-weight='bold'
-            font-style='normal'
+            fontWeight='bold'
+            fontStyle='normal'
             stroke='#000'
             transform='matrix(3.1576203979257116,0,0,2.834567466377507,-44.60143423035672,3.2728707210788923) '
             // xml:space='preserve'
-            text-anchor='start'
-            font-family='Oswald, sans-serif'
-            font-size='24'
+            textAnchor='start'
+            fontFamily='Oswald, sans-serif'
+            fontSize='24'
             id='svg_5'
             y='15.529262'
             x='17.0476'
-            stroke-width='0'
+            strokeWidth='0'
             fill='#000000'
           >
             x

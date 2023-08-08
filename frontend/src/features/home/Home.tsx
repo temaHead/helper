@@ -28,10 +28,10 @@ function Home() {
               />
             ) : (
               <div className={style.rooms}>
-                Мои категории
+                Мои списки
                 <Categories />
                 <div className={style.rooms_buttonAdd}>
-                  <button onClick={() => setOpenModal(true)}>add</button>
+                  <button onClick={() => setOpenModal(true)}>Добавить список</button>
                 </div>
               </div>
             )}

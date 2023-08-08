@@ -6,20 +6,18 @@
   padding: 5px;
 }
 .home_content {
-  border: 2px solid yellow;
   border-radius: 8px;
-  height: 90vh;
+  height: 90%;
   display: flex;
   flex-direction: column;
 }
 .commercial_block {
-  border: 2px solid yellow;
+  background-color: antiquewhite;
   border-radius: 8px;
   height: 15%;
   margin-top: 5%;
 }
 .rooms {
-  border: 2px solid yellow;
   border-radius: 8px;
   height: 80%;
   margin-top: 5%;
